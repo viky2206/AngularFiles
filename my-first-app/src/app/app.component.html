@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 style="text-align: center;">Check if account existed earlier</h1>
+        </div>
+        <div style="text-align: center" class="col-xs-12">
+            <h2>account Name</h2>
+            <input type="text" [(ngModel)]="name">
+        </div>
+    </div>
+    <div class="column">
+        <div class="col-xs-6">
+           <app-warning name={{name}}>
+            
+           </app-warning>
+        </div>
+        <div class="col-xs-6">
+           <app-success name={{name}}></app-success>
+        </div>
+    </div>
+</div>
