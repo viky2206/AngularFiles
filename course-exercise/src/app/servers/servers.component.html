@@ -1,0 +1,8 @@
+<!-- <input type="text" (input)="onInput($event)"> -->
+<input type="text" [(ngModel)]="serverName">
+<button class="btn btn-primary" [disabled]="!allowAddServer" (click)="addServer()">add servers</button>
+<p>
+    {{serverName}}
+</p>
+<p>{{count}}</p>
+<app-server></app-server>
